@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $mobile = $_POST['mobile'];
 
-    //insert quer
+    //insert query
 
     $sql = "INSERT INTO seriescrud (fname, lname, email, mobile) VALUES('$fname','$lname','$email','$mobile')";
 
@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
     
         
             <div class='container my -5'>
-                <form method="post">
+                <form method="post" action=>
                     <div class="mb-3">
                         <label class="form-label">Firstname</label>
                         <input type="text" class="form-control" placeholder="Enter your  first name" name="fname" autocomplete="off">
